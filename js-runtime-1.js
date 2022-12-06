@@ -2,8 +2,8 @@ function printMessage() {
   console.log("2");
   setTimeout(function () {
     console.log("5");
+    name = "Milka";
   }, 5000);
-  console.log("7");
   setTimeout(function () {
     console.log("0");
   }, 0);
