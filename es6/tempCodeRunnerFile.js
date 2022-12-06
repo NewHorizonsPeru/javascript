@@ -1,5 +1,2 @@
-function printMessage(message = "Default Value") {
-  console.log(message);
-}
-
-printMessage(null);
+console.log(undefined == null);
+console.log(undefined === null);
