@@ -1,0 +1,5 @@
+function stackoverflow() {
+  stackoverflow();
+}
+
+stackoverflow();
