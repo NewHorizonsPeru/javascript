@@ -1,19 +1,9 @@
-/** ARRAY DE VALORES => LISTA DE VALORES **/
-var values = [
-  "Perú",
-  "Lima",
-  "Chimbote",
-  "Huaraz",
-  "Trujillo",
-  "Chiclayo",
-  "Juaja",
-];
+const userData = {
+  name: "Carmen",
+  age: 30,
+};
 
-function printValues(a, b, c, d, e, f, g) {
-  console.log(a, b, c, d, e, f, g);
-}
+userData.age = 65;
+userData.lastname = "Bonilla";
 
-printValues(...values);
-
-var mergeArray = [...values, "Huancayo", "Huaral", "Huarmey", "Huacho"];
-console.log(mergeArray);
+console.log(userData);
