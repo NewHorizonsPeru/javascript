@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Javascript & ECMAScript",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +12,8 @@
     "js"
   ],
   "author": "rdelarosa",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }
