@@ -1,9 +1,10 @@
-const userData = {
-  name: "Carmen",
-  age: 30,
-};
-
-userData.age = 65;
-userData.lastname = "Bonilla";
-
-console.log(userData);
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  printFullName() {
+    console.log(`${this.firstName}, ${this.lastName}.`);
+  }
+}
+console.log(typeof Person);
