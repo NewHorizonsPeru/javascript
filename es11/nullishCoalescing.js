@@ -1,13 +1,21 @@
 /**
- * || -> user.active VALIDA QUE NO SEA NULL, UNDEFINED, FALSE, ZERO
- * ?? -> user.active VALIDA QUE NO SEA NULL O UNDEFINED
+ *  || -> VALIDA NULL, UNDEFINED, FALSE Y 0
+ *  ?? -> VALIDA NULL O UNDEFINED
  * **/
 
-const publish = {
-  title: "ECMA Script 11",
+const value = false;
+
+console.log(value || "Pedro");
+console.log(value ?? "Pedro");
+
+const user = {
+  name: "Oscar",
+  lastName: "Toledo",
 };
 
-//const existsPropActive = publish.active || "No existe la propiedad TyC";
-const existsTyC = publish.tyc ?? "No existen los terminos y condiciones.";
+/**const lastName = user.fullName ?? "";
+console.log(lastName);
+const roleName = (user.role ?? {}).name ?? "Sin Definir";
+console.log(roleName);**/
 
-console.log(existsTyC);
+console.log(user.role.id);

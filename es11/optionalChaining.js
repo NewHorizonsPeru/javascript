@@ -1,12 +1,11 @@
-const publish = {
-  title: "ECMA Script 11",
-  active: 1,
-  tag: ["es11", "js"],
+const comment = {
+  owner: {
+    id: 32,
+    name: "Jaime",
+  },
+  created: "08/12/2022",
+  content: "Ipsum minim deserunt sint deserunt.",
 };
-
-//const authorName = (publish.author ?? {}).name ?? "No existe autor.";
-//const authorName = (publish.author && publish.author.name) ?? "No existe autor";
-
-const authorName = publish.author?.name ?? "No existe Autor";
-
-console.log(authorName);
+//const errorMessage = (comment.error ?? {}).message ?? "No existe error.";
+const errorMessage = comment.error?.message ?? "No existe error.";
+console.log(errorMessage);
